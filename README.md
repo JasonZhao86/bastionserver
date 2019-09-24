@@ -1,2 +1,1 @@
-# shell_learning
-Shell learning code
+基于jumpserver 1.4.8版本二次开发的bastionserver旨在迎合我公司的业务场景。
