@@ -1,1 +1,8 @@
-brew install libtiff libjpeg webp little-cms2 openssl
+brew install libtiff libjpeg webp little-cms2 openssl mysql-connector-c gettext
+brew link gettext --force
+pip install --upgrade pip setuptools==45.2.0
+
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"'
+source /Users/web/.bash_profile
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
