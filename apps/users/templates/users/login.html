@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HP Bridge</title>
+    <title>GTLM</title>
     <link rel="shortcut icon" href="{% static "img/facio.ico" %}" type="image/x-icon">
     {% include '_head_css_js.html' %}
     <link href="{% static "css/jumpserver.css" %}" rel="stylesheet">
@@ -16,18 +16,25 @@
         .captcha {
              float: right;
          }
+         body {
+             background-repeat: no-repeat;
+             background-position: center center #2D0F0F;
+             background-color: #00BDDC;
+             background-image: url({% static "img/login/snow.jpg" %});
+             background-size: 100% 100%;
+         }
     </style>
 </head>
 
 <body class="gray-bg">
     <div class="loginColumns animated fadeInDown">
         <div class="row">
-	    <div class="col-md-3"></div>
+	        <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="ibox-content">
                     <div>
                         <img src="{% static 'img/logo.png' %}" width="60" height="60">
-                        <span class="font-bold text-center" style="font-size: 24px; font-family: inherit; margin-left: 20px">{% trans 'HP Bridge' %}</span>
+                        <span class="font-bold text-center" style="font-size: 24px; font-family: inherit; margin-left: 20px">{% trans 'GTLM' %}</span>
                     </div>
                     <form class="m-t" role="form" method="post" action="">
                         {% csrf_token %}
@@ -83,7 +90,7 @@
 
                 </div>
             </div>
-	<div class="col-md-3"></div>
+	        <div class="col-md-3"></div>
         </div>
     </div>
 </body>

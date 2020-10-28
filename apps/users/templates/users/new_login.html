@@ -16,7 +16,7 @@
         {% if interface and interface.login_title %}
             {{ interface.login_title }}
         {% else %}
-           HP Bridge 
+           GTLM
         {% endif %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,7 +93,7 @@
                                 {{ form.captcha }}
                             </div>
                             <div class="form-group" style="margin-top: 10px">
-                                <button type="submit" class="btn btn-transparent">{% trans 'HP Bridge' %}</button>
+                                <button type="submit" class="btn btn-transparent">{% trans 'GTLM' %}</button>
                             </div>
                             <div style="text-align: center">
                                 <a href="{% url 'users:forgot-password' %}">
