@@ -2,6 +2,7 @@ FROM registry.fit2cloud.com/public/python:v3
 LABEL maintainer="jasonzhao <jason.zhao@hp.com>"
 
 WORKDIR /opt/jumpserver
+RUN mkdir /opt/jumpserver/tmp
 RUN useradd jumpserver
 
 COPY ./requirements /tmp/requirements
